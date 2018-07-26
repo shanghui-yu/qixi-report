@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <meta name="format-detection" content="telephone=no">
+    <script>
+      var phoneScale = parseInt(window.screen.width) / 750;
+      if (/Android (\d+\.\d+)/.test(navigator.userAgent)) {
+        if (parseFloat(RegExp.$1) > 2.3) {
+          document.write('<meta name="viewport" content="width=750, minimum-scale=' + phoneScale +
+            ', maximum-scale=' + phoneScale + ', target-densitydpi=device-dpi" />');
+        } else {
+          document.write('<meta name="viewport" content="width=750, target-densitydpi=device-dpi" />');
+        }
+      } else {
+        document.write('<meta name="viewport" content="width=750,user-scalable=no, minimum-scale=' +
+          phoneScale +
+          ', maximum-scale=' + phoneScale + '" />');
+      }
+    </script>
+    <%- css("style-index.css") %>
+</head>
+<body>
+<h1>Hello World!</h1>
+</body>
+</html>
