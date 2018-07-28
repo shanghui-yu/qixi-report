@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World!</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="apple-mobile-web-app-capable" content="no" />
+  <meta name="format-detection" content="telephone=no">
+  <script>
+    var phoneScale = parseInt(window.screen.width) / 750;
+    if (/Android (\d+\.\d+)/.test(navigator.userAgent)) {
+      if (parseFloat(RegExp.$1) > 2.3) {
+        document.write('<meta name="viewport" content="width=750, minimum-scale=' + phoneScale +
+          ', maximum-scale=' + phoneScale + ', target-densitydpi=device-dpi" />');
+      } else {
+        document.write('<meta name="viewport" content="width=750, target-densitydpi=device-dpi" />');
+      }
+    } else {
+      document.write('<meta name="viewport" content="width=750,user-scalable=no, minimum-scale=' +
+        phoneScale +
+        ', maximum-scale=' + phoneScale + '" />');
+    }
+  </script>
+  <link rel="stylesheet" href="../css/style-index.css">
+</head>
+
+<body>
+  <div class="home">
+    <div class="header">
+      <h3>基因报告</h3>
+      <span>单身套装</span>
+    </div>
+    <ul class="truntable">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div class="logo"></div>
+  </div>
+  <script src="../js/t.min.js"></script>
+  <script src="https://s.kcimg.cn/public/m/js/t.flipview.js"></script>
+
+  <script src="../js/swiper-3.4.2.min.js"></script>
+  <script src="../js/qixi.js"></script>
+</body>
+
+</html>

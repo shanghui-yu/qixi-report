@@ -11,7 +11,10 @@ var swiper = new Swiper('#part', {
 });
 var flipview_wrapper = document.querySelector('#flipview_wrapper');
 
-flipview_wrapper.addEventListener('changed', function () {
+if (window.innerHeight < 1182) {
+  flipview_wrapper&&flipview_wrapper.classList.add('smail-polify')
+}
+flipview_wrapper && flipview_wrapper.addEventListener('changed', function () {
   var visible = this.querySelector('li.visible');
   visible && visible.classList.remove('visible');
   this.querySelectorAll('.container > li')[this.index].classList.add('visible');
