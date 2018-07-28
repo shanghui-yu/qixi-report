@@ -9,7 +9,6 @@ var swiper = new Swiper('#part', {
     document.querySelector('[data-id="' + swiper.activeIndex + '"]').classList.add('visible')
   }
 });
-alert(window.innerHeight)
 var flipview_wrapper = document.querySelector('#flipview_wrapper');
 
 flipview_wrapper.addEventListener('changed', function () {
