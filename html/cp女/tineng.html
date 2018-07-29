@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World!</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="apple-mobile-web-app-capable" content="no" />
+  <meta name="format-detection" content="telephone=no">
+  <script>
+    var phoneScale = parseInt(window.screen.width) / 750;
+    if (/Android (\d+\.\d+)/.test(navigator.userAgent)) {
+      if (parseFloat(RegExp.$1) > 2.3) {
+        document.write('<meta name="viewport" content="width=750, minimum-scale=' + phoneScale +
+          ', maximum-scale=' + phoneScale + ', target-densitydpi=device-dpi" />');
+      } else {
+        document.write('<meta name="viewport" content="width=750, target-densitydpi=device-dpi" />');
+      }
+    } else {
+      document.write('<meta name="viewport" content="width=750,user-scalable=no, minimum-scale=' +
+        phoneScale +
+        ', maximum-scale=' + phoneScale + '" />');
+    }
+  </script>
+  <link rel="stylesheet" href="../../css/cpnv/style-index.css">
+</head>
+
+<body>
+  <div class="flipview-wrapper flipview" data-loop="false" id="flipview_wrapper">
+    <ul class="container tineng">
+      <!--组件-->
+      <li>
+        <div class="swiper-container" id="part">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="part">
+                <h4 class="title">
+                  耐力
+                  <span>Stamina</span>
+                </h4>
+                <div class="main">
+                  <div class="top">
+                    <div class="lf">
+                      <h5>超越人群比例
+                        <em>15%</em>
+                      </h5>
+                      <div class="people-Proportion">
+                        <!-- ok是全红 half是半红 -->
+                        <i class="ok"></i>
+                        <i class="half"></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                      </div>
+                    </div>
+                    <div class="rt">
+                      <h5>恋爱魄力程度</h5>
+                      <span>弱</span>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <p>有人认为爱是性，是婚姻，</p>
+                    <p>是清晨六点的吻，是一堆孩子。</p>
+                    <p>但你的基因知道你是怎么想的，</p>
+                    <p>你觉得，爱是想触碰又收回手。</p>
+                  </div>
+                  <p class="tips">
+                    基因层面可以预测一个人如下能力：社交中（追爱过程中）遇到挫折是否会感到疼痛，是否会胆怯，是否能够从被拒绝和被抛弃的痛苦中快速恢
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="part">
+                <h4 class="title">
+                  耐力2
+                  <span>Stamina</span>
+                </h4>
+                <div class="main">
+                  <div class="top">
+                    <div class="lf">
+                      <h5>超越人群比例
+                        <em>15%</em>
+                      </h5>
+                      <div class="people-Proportion">
+                        <!-- ok是全红 half是半红 -->
+                        <i class="ok"></i>
+                        <i class="half"></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                      </div>
+                    </div>
+                    <div class="rt">
+                      <h5>恋爱魄力程度</h5>
+                      <span>弱</span>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <p>有人认为爱是性，是婚姻，</p>
+                    <p>是清晨六点的吻，是一堆孩子。</p>
+                    <p>但你的基因知道你是怎么想的，</p>
+                    <p>你觉得，爱是想触碰又收回手。</p>
+                  </div>
+                  <p class="tips">
+                    基因层面可以预测一个人如下能力：社交中（追爱过程中）遇到挫折是否会感到疼痛，是否会胆怯，是否能够从被拒绝和被抛弃的痛苦中快速恢
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add Arrows -->
+          <div class="button-prev"></div>
+          <div class="button-next"></div>
+        </div>
+        <div class="footer-tips">
+          <span class="brand">众码基因</span>
+          <span class="arrow">滑动查看详细报告</span>
+          <span class="sava">点击保存</span>
+        </div>
+      </li>
+      <li id="tow_section">
+        <div data-id="0" class="section-page visible">
+          <div class="circle1"></div>
+          <div class="circle2"></div>
+          <setion class="part1">
+            <h5>基因的检测</h5>
+            <ul class="jianche-list">
+              <li>
+                <span class="top">基点</span>
+                <span>TMPRSS</span>
+                <span>TMPRSS</span>
+              </li>
+              <li>
+                <span class="top">位点</span>
+                <span>rs4028268</span>
+                <span>rs4028268</span>
+              </li>
+              <li>
+                <span class="top">基因类型</span>
+                <span>G/G</span>
+                <span>A/G</span>
+              </li>
+            </ul>
+          </setion>
+          <setion class="part2">
+            <h5>检测的科学意义</h5>
+            <p>1TMPRSS基因编码是一种跨膜蛋白酶，该蛋白是维持血液中元素动态平衡的核心因子。TMPRSS基因发生突变时，容易导致睡眠时间较晚。rs4820268的GG和rs855791的AG与睡眠习惯密切相关。</p>
+            <p>TMPRSS基因编码是一种跨膜蛋白酶，该蛋白是维持血液中元素动态平衡的核心因子。TMPRSS基因发生突变时，容易导致睡眠时间较晚。rs4820268的GG和rs855791的AG与睡眠习惯密切相关。TMPRSS基因编码是一种跨膜蛋白酶，该蛋白是维持血液中元素动态平衡的核心因子。TMPRSS基因发生突变时，容易导致睡眠时间较晚。rs4820268的GG和rs855791的AG与睡眠习惯密切相关。</p>
+          </setion>
+        </div>
+        <div data-id="1" class="section-page two">
+          <div class="circle1"></div>
+          <div class="circle2"></div>
+          <setion class="part1">
+            <h5>基因的检测</h5>
+            <ul class="jianche-list">
+              <li>
+                <span class="top">基点</span>
+                <span>TMPRSS</span>
+                <span>TMPRSS</span>
+              </li>
+              <li>
+                <span class="top">位点</span>
+                <span>rs4028268</span>
+                <span>rs4028268</span>
+              </li>
+              <li>
+                <span class="top">基因类型</span>
+                <span>G/G</span>
+                <span>A/G</span>
+              </li>
+            </ul>
+          </setion>
+          <setion class="part2">
+            <h5>检测的科学意义</h5>
+            <p>1TMPRSS基因编码是一种跨膜蛋白酶，该蛋白是维持血液中元素动态平衡的核心因子。TMPRSS基因发生突变时，容易导致睡眠时间较晚。rs4820268的GG和rs855791的AG与睡眠习惯密切相关。</p>
+            <p>TMPRSS基因编码是一种跨膜蛋白酶，该蛋白是维持血液中元素动态平衡的核心因子。TMPRSS基因发生突变时，容易导致睡眠时间较晚。rs4820268的GG和rs855791的AG与睡眠习惯密切相关。TMPRSS基因编码是一种跨膜蛋白酶，该蛋白是维持血液中元素动态平衡的核心因子。TMPRSS基因发生突变时，容易导致睡眠时间较晚。rs4820268的GG和rs855791的AG与睡眠习惯密切相关。</p>
+          </setion>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <script src="../../js/t.min.js"></script>
+  <script src="../../js/t.flipview.js"></script>
+
+  <script src="../../js/swiper-3.4.2.min.js"></script>
+  <script src="../../js/nantuan/qixi.js"></script>
+</body>
+
+</html>
