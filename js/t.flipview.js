@@ -1,3 +1,24 @@
+HTMLElement.prototype.parents = function (p) {
+  /*
+   ** 寻找祖先元素
+   */
+	var target, t = this;
+	while ((t = t.parentNode) && t.nodeType !== 9) {
+		if (t.nodeType === 1) {
+			if (t.tagName.toLowerCase() === p) {
+				target = t;
+				break;
+			} else if (p.startsWith('.') && t.classList.contains(p.replace(/\./, ''))) {
+				target = t;
+				break;
+			} else if (p.startsWith('#') && '#' + t.id === p) {
+				target = t;
+				break;
+			}
+		}
+	};
+	return target;
+};
 define(function (require, exports, module) {
 	var $ = exports, transform = $.transform, transition = $.transition, translate3d = $.translate3d && !/MiuiBrowser/i.test(navigator.userAgent)&& !/GT\-\w?\d+/i.test(navigator.userAgent);
 	var instances = [], touchPreventDefault = !Event.touchEnabled || Event.Touch.up === 'MSPointerUp';
@@ -246,6 +267,12 @@ define(function (require, exports, module) {
 
 		var touchmove, touched, startX, startY, lastTouch, moved;
 		container.addEventListener(Event.Touch.down, function (e) {
+			var target = e.target
+			if (target.parents('.jianche-list')){
+				console.log(2);
+				
+				return;
+			}
 			if (!Event.Touch.isMsPrimary(e)) return;
 			cancel();
 			touchPreventDefault && Event.preventDefault(e);

@@ -117,8 +117,7 @@ body,html{position:relative;height:100%}
 .swiper-slide .main .content{padding:25px 0;border-top:1px solid #b25181;border-bottom:2px solid #feb3b9;}
 .swiper-slide .main .content p{font-size:27px;line-height:37px;color:#b25181;letter-spacing:1px;font-weight:bold;}
 .swiper-slide .main .tips{font-size:15px;line-height:25px;color:#b25181;padding-top:25px;}
-.swiper-slide .title{margin:110px 0 0 100px;font-size:54px;line-height:69px;color:#fff;}
-.swiper-slide .title span{display:block;font-size:25px;line-height:30px;font-family:"ZCOOL";}
+.swiper-slide .title{margin:110px 0 0 100px;max-width:216px;}
 .swiper-slide{background-image:-webkit-gradient(linear,left top, left bottom,from(#ffcebb),color-stop(20%, #fde6b4),color-stop(60%, #f7dcb5),to(#fdb2d6));background-image:-webkit-linear-gradient(top,#ffcebb 0%,#fde6b4 20%,#f7dcb5 60%,#fdb2d6 100%);background-image:-moz-linear-gradient(top,#ffcebb 0%,#fde6b4 20%,#f7dcb5 60%,#fdb2d6 100%);background-image:linear-gradient(to bottom,#ffcebb 0%,#fde6b4 20%,#f7dcb5 60%,#fdb2d6 100%);}
 .section-page{width:100%;height:100%;display:none;overflow:hidden;position:relative;background:url('../../images/cp-nv/qingshang/top.jpg') top #fff no-repeat;}
 .swiper-slide .part{background:url('../../images/cp-nv/qingshang/content.png') no-repeat;}
@@ -131,15 +130,17 @@ body,html{position:relative;height:100%}
 .section-page setion p{margin-top:50px;font-size:23px;line-height:36px;color:#9fa0a0;letter-spacing:1px;}
 .section-page .part1{margin:203px auto 55px;width:574px;border-bottom:1px solid #cacaca;padding:45px 0 45px;position:relative;overflow:auto;}
 .section-page .jianche-list{width:262px;float:right;}
-.section-page .jianche-list li{background:#f7f8f8;-moz-border-radius:10px;border-radius:10px;width:84px;float:left;height:110px;margin-right:5px;color:#abacac;font-size:14px;text-align:center;}
-.section-page .jianche-list li span{width:100%;height:28px;line-height:28px;display:block;position:relative;}
-.section-page .jianche-list li .top{height:35px;-moz-border-radius:17px;border-radius:17px;background:#9e9e9f;color:#fff;line-height:35px;margin-bottom:10px;}
-.section-page .jianche-list li .top::after{width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-top:10px solid #9e9e9f;content:'';position:absolute;top:35px;left:50%;-webkit-transform:translate(-50%,0);-moz-transform:translate(-50%,0);-ms-transform:translate(-50%,0);transform:translate(-50%,0);}
-.section-page .jianche-list li span::after{content:'';width:62px;position:absolute;left:50%;-webkit-transform:translate(-50%,0);-moz-transform:translate(-50%,0);-ms-transform:translate(-50%,0);transform:translate(-50%,0);bottom:0;border-top:1px solid #9e9e9f;}
+.section-page .jianche-list li .main{overflow-y: auto; max-height: 200px;}
+.section-page .jianche-list li{background:#f7f8f8;border-radius:10px;width:84px;padding-top: 50px;position: relative; float:left;padding-bottom: 8px; margin-right:5px;color:#abacac;font-size:14px;text-align:center;}
+.section-page .jianche-list li span{width:100%;height:28px;padding: 0 5px;overflow: hidden;
+text-overflow:ellipsis;box-sizing: border-box;
+white-space: nowrap; line-height:28px;display:block;position:relative;}
+.section-page .jianche-list li .top{height:35px;border-radius:17px;background:#9e9e9f;color:#fff;line-height:35px;position: absolute;top:10px;}
+.section-page .jianche-list li .top::after{width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-top:10px solid #9e9e9f;content:'';position:absolute;top:35px;left:50%;-webkit-transform:translate(-50%,0);transform:translate(-50%,0);}
+.section-page .jianche-list li span::after{content:'';width:62px;position:absolute;left:50%;-webkit-transform:translate(-50%,0);transform:translate(-50%,0);bottom:0;border-top:1px solid #9e9e9f;}
 .section-page .jianche-list li span:last-child::after{display:none;}
 .section-page .jianche-list li:nth-child(3){margin-right:0}
 .section-page .part2 h5{margin-bottom:25px;float:unset;}
-.qingshang .swiper-slide .title{color:#ff007e;}
 
 /* 感情长久 */
 .ganqingchangjiu .swiper-slide{background-image:-webkit-gradient(linear,left top, left bottom,from(#302046),color-stop(20%, #6a3c42),color-stop(60%, #e47642),to(#f47e42));background-image:-webkit-linear-gradient(top,#302046 0%,#6a3c42 20%,#e47642 60%,#f47e42 100%);background-image:-moz-linear-gradient(top,#302046 0%,#6a3c42 20%,#e47642 60%,#f47e42 100%);background-image:linear-gradient(to bottom,#302046 0%,#6a3c42 20%,#e47642 60%,#f47e42 100%);}
