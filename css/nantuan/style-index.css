@@ -96,7 +96,7 @@ body,html{position:relative;height:100%}
 .swiper-slide .main .content{padding:25px 0;border-top:1px solid #ff737f;border-bottom:2px solid #feb3b9;}
 .swiper-slide .main .content p{font-size:27px;line-height:37px;color:#eb5f68;letter-spacing:1px;font-weight:bold;}
 .swiper-slide .main .tips{font-size:15px;line-height:25px;color:#ff737f;padding-top:25px;}
-.swiper-slide .title{margin:110px 0 0 100px;max-width:216px;}
+.swiper-slide .title{margin:110px 0 0 100px;max-width:216px;font-size: 0;}
 .section-page{width:100%;height:100%;display:none;overflow:hidden;position:relative;background:url('../images/title1.jpg') top #fff no-repeat;}
 .section-page.two{background:url('../images/top2.jpg') top #fff no-repeat;}
 .section-page.three{background:url('../images/top3.jpg') top #fff no-repeat;}
@@ -113,7 +113,7 @@ body,html{position:relative;height:100%}
 .section-page .jianche-list li .main{overflow-y: auto; max-height: 200px;}
 .section-page .jianche-list li{background:#f7f8f8;border-radius:10px;width:84px;padding-top: 50px;position: relative; float:left;padding-bottom: 8px; margin-right:5px;color:#abacac;font-size:14px;text-align:center;}
 .section-page .jianche-list li span{width:100%;height:28px;padding: 0 5px;overflow: hidden;
-text-overflow:ellipsis;box-sizing: border-box;
+text-overflow:ellipsis;-webkit-box-sizing: border-box;box-sizing: border-box;
 white-space: nowrap; line-height:28px;display:block;position:relative;}
 .section-page .jianche-list li .top{height:35px;border-radius:17px;background:#9e9e9f;color:#fff;line-height:35px;position: absolute;top:10px;}
 .section-page .jianche-list li .top::after{width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-top:10px solid #9e9e9f;content:'';position:absolute;top:35px;left:50%;-webkit-transform:translate(-50%,0);transform:translate(-50%,0);}
@@ -122,20 +122,37 @@ white-space: nowrap; line-height:28px;display:block;position:relative;}
 .section-page .jianche-list li:nth-child(3){margin-right:0}
 .section-page .part2 h5{margin-bottom:25px;float:unset;}
 
-/* 一起拼 */
-.yiqipin .swiper-slide,.yiqiliao .swiper-slide{background-image:-webkit-gradient(linear,left top, left bottom,from(#ffeaf5),color-stop(30%, #e1dff0),color-stop(60%, #afcde5),to(#a5ddff));background-image:linear-gradient(to bottom,#ffeaf5 0%,#e1dff0 30%,#afcde5 60%,#a5ddff 100%);}
-.yiqipin .section-page .circle1,.yiqiliao .section-page .circle1{width:127px;height:134px;top:104px;right:-12px;background:url('../../images/nantuan/yiqipin/icon1.png') no-repeat;background-size:cover;}
-.yiqipin .section-page .circle2,.yiqiliao .section-page .circle2{width:184px;height:196px;bottom:20px;left:-40px;background:url('../../images/nantuan/yiqipin/icon2.png') 50% 50% no-repeat;background-size:cover;}
-.yiqipin .section-page,.yiqiliao .section-page{background:url('../../images/nantuan/yiqipin/top.jpg') top #fff no-repeat;}
-.yiqipin .swiper-slide .part,.yiqiliao .swiper-slide .part{background:url('../../images/nantuan/yiqipin/content.png') no-repeat;}
-.flipview-wrapper .yiqipin.container>li .footer-tips,.flipview-wrapper .yiqiliao.container>li .footer-tips{color:#366e8f;}
+/* 一起聊 */
+.yiqiliao .swiper-slide{
+    background-image:-webkit-gradient(linear,left top, left bottom,from(#f8d7d3),color-stop(30%, #aaa0cc),color-stop(60%, #233b96),to(#121b71));
+    background-image:linear-gradient(to bottom,#f8d7d3 0%,#aaa0cc 30%,#233b96 60%,#121b71 100%);}
+.yiqiliao .section-page .circle1{width:158px;height:129px;top:101px;right:0px;background:url('../../images/nantuan/yiqiliao/icon1.png') no-repeat;background-size:cover;}
+.yiqiliao .section-page .circle2{width:208px;height:170px;bottom:20px;left:10px;background:url('../../images/nantuan/yiqiliao/icon2.png') 50% 50% no-repeat;background-size:cover;}
+.yiqiliao .section-page{background:url('../../images/nantuan/yiqiliao/top.jpg') top #fff no-repeat;}
+.yiqiliao .swiper-slide .part{background:url('../../images/nantuan/yiqiliao/content.png') no-repeat;}
 .smail-polify .swiper-slide .part{-webkit-transform:scale(0.92);transform:scale(0.92);margin-top:-30px;}
-.yiqipin .section-page setion h5::before,.yiqiliao .section-page setion h5::before{background:url('../../images/nantuan/yiqipin/smail-icon.png') no-repeat;}
-.yiqipin .swiper-slide .main .content p,.yiqipin .swiper-slide .main .top>div,.yiqipin .swiper-slide .main .tips,.yiqiliao .swiper-slide .main .content p,.yiqiliao .swiper-slide .main .top>div,.yiqiliao .swiper-slide .main .tips{color:#483b40;}
-.yiqipin .swiper-slide .main .content,.yiqiliao .swiper-slide .main .content{border-top:1px solid #483b40;border-bottom:2px solid #483b40;}
-.yiqipin .swiper-slide .main .top .lf i,.yiqiliao .swiper-slide .main .top .lf i{background:url('../../images/nantuan/yiqipin/people.png') no-repeat;}
-.yiqipin .swiper-slide .main .top .lf .ok,.yiqiliao .swiper-slide .main .top .lf .ok{background:url('../../images/nantuan/yiqipin/people1.png') no-repeat;}
-.yiqipin .swiper-slide .main .top .lf .half,.yiqiliao .swiper-slide .main .top .lf .half{background:url('../../images/nantuan/yiqipin/people-ban.png') no-repeat;}
+.yiqiliao .section-page setion h5::before{background:url('../../images/nantuan/yiqiliao/smail-icon.png') no-repeat;}
+.yiqiliao .swiper-slide .main .content p,.yiqiliao .swiper-slide .main .top>div,.yiqiliao .swiper-slide .main .tips{color:#1516a7;}
+.yiqiliao .swiper-slide .main .content{border-top:1px solid #1516a7;border-bottom:2px solid #1516a7;}
+.yiqiliao .swiper-slide .main .top .lf i{background:url('../../images/nantuan/yiqiliao/people.png') no-repeat;}
+.yiqiliao .swiper-slide .main .top .lf .ok{background:url('../../images/nantuan/yiqiliao/people1.png') no-repeat;}
+.yiqiliao .swiper-slide .main .top .lf .half{background:url('../../images/nantuan/yiqiliao/people-ban.png') no-repeat;}
+
+
+/* 一起拼 */
+.yiqipin .swiper-slide{background-image:-webkit-gradient(linear,left top, left bottom,from(#ffeaf5),color-stop(30%, #e1dff0),color-stop(60%, #afcde5),to(#a5ddff));background-image:linear-gradient(to bottom,#ffeaf5 0%,#e1dff0 30%,#afcde5 60%,#a5ddff 100%);}
+.yiqipin .section-page .circle1{width:127px;height:134px;top:104px;right:-12px;background:url('../../images/nantuan/yiqipin/icon1.png') no-repeat;background-size:cover;}
+.yiqipin .section-page .circle2{width:184px;height:196px;bottom:20px;left:-40px;background:url('../../images/nantuan/yiqipin/icon2.png') 50% 50% no-repeat;background-size:cover;}
+.yiqipin .section-page{background:url('../../images/nantuan/yiqipin/top.jpg') top #fff no-repeat;}
+.yiqipin .swiper-slide .part{background:url('../../images/nantuan/yiqipin/content.png') no-repeat;}
+.flipview-wrapper .yiqipin.container>li .footer-tips{color:#366e8f;}
+.smail-polify .swiper-slide .part{-webkit-transform:scale(0.92);transform:scale(0.92);margin-top:-30px;}
+.yiqipin .section-page setion h5::before{background:url('../../images/nantuan/yiqipin/smail-icon.png') no-repeat;}
+.yiqipin .swiper-slide .main .content p,.yiqipin .swiper-slide .main .top>div,.yiqipin .swiper-slide .main .tips{color:#483b40;}
+.yiqipin .swiper-slide .main .content{border-top:1px solid #483b40;border-bottom:2px solid #483b40;}
+.yiqipin .swiper-slide .main .top .lf i{background:url('../../images/nantuan/yiqipin/people.png') no-repeat;}
+.yiqipin .swiper-slide .main .top .lf .ok{background:url('../../images/nantuan/yiqipin/people1.png') no-repeat;}
+.yiqipin .swiper-slide .main .top .lf .half{background:url('../../images/nantuan/yiqipin/people-ban.png') no-repeat;}
 
 /* 一起吃 */
 .yiqichi .swiper-slide{background-image:-webkit-gradient(linear,left top, left bottom,from(#ffe47d),color-stop(30%, #fff09a),color-stop(60%, #eede99),to(#927351));background-image:linear-gradient(to bottom,#ffe47d 0%,#fff09a 30%,#eede99 60%,#927351 100%);}
